@@ -35,6 +35,21 @@ const questions = [
         name: "license",
         message: "Which license are you using?",
         choices: ["MIT", "Apache", "None"]
+    },
+    {
+        type: "input",
+        name: "usage",
+        message: "Please provide some instructions and examples of use cases for your code."
+    },
+    {
+        type: "input",
+        name: "contributing",
+        message: "What should a user do if they'd like to contribute?"
+    },
+    {
+        type: "input",
+        name: "tests",
+        message: "Please write some sample tests for your code."
     }
 ];
 

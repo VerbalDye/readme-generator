@@ -44,12 +44,15 @@ function generateMarkdown(data) {
   ${installMarkDown(data.install)}
 
   ## Usage
+  ${data.usage}
 
   ${renderLicenseSection(data)}
 
   ## Contributing
+  ${data.contributing}
 
   ## Tests
+  ${data.tests}
 
   ## Questions?
   If you have any more questions for me, I can be reached from one of the links below. Thank you!
