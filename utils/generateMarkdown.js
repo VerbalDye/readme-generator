@@ -8,8 +8,7 @@ function renderLicense(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {}
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// errr
 function renderLicenseSection(data) {
     if (data.license == "None") {
         return ""
@@ -21,6 +20,7 @@ function renderLicenseSection(data) {
   `
 }
 
+// Creates the steps of the installation process in MD
 const installMarkDown = installSteps => {
     return installSteps
     .map( (step, index) => {
