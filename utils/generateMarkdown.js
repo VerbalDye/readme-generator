@@ -30,6 +30,14 @@ const installMarkDown = installSteps => {
     .join('')
 }
 
+const testsMarkdown = tests => {
+    if (tests) {
+        return "## Tests\n" + tests;
+    } else {
+        return ""
+    }
+}
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
@@ -39,6 +47,10 @@ function generateMarkdown(data) {
   ${data.description}
 
   ## Table of Contents
+  - [Install](#installation-instructions)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [Questions](#questions) 
 
   ## Installation Instructions
   ${installMarkDown(data.install)}
@@ -51,8 +63,7 @@ function generateMarkdown(data) {
   ## Contributing
   ${data.contributing}
 
-  ## Tests
-  ${data.tests}
+  ${testsMarkdown(data.tests)}
 
   ## Questions?
   If you have any more questions for me, I can be reached from one of the links below. Thank you!
