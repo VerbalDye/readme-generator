@@ -1,4 +1,4 @@
-// errr
+// gets license text
 function renderLicense(license, name) {
     switch (license) {
         case "MIT":
@@ -32,7 +32,7 @@ limitations under the License.
    }
 }
 
-// errr
+// puts all license info together
 function renderLicenseSection(data) {
     if (data.license == "None") {
         return ""
@@ -58,6 +58,7 @@ const installMarkDown = installSteps => {
         .join('')
 }
 
+// creates the MD for the tests field
 const testsMarkdown = tests => {
     if (tests) {
         return "## Tests\n" + tests;
@@ -66,7 +67,7 @@ const testsMarkdown = tests => {
     }
 }
 
-// TODO: Create a function to generate markdown for README
+// Puts all the pieces together to create the readme text
 function generateMarkdown(data) {
     return `
   # ${data.title}
@@ -100,4 +101,5 @@ function generateMarkdown(data) {
 `;
 }
 
+// exports our function to be called from the 'index.js' file
 module.exports = generateMarkdown;
