@@ -12,6 +12,11 @@ const questions = [
     },
     {
         type: "input",
+        name: "name",
+        message: "What is the name of the project owner (Person or organization)"
+    },
+    {
+        type: "input",
         name: "repo",
         message: "Enter your exact Github repository name."
     },
@@ -34,7 +39,7 @@ const questions = [
         type: "list",
         name: "license",
         message: "Which license are you using?",
-        choices: ["MIT", "Apache", "None"]
+        choices: ["MIT", "Apache", "Other","None"]
     },
     {
         type: "input",
